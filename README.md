@@ -58,12 +58,12 @@ JWT_SECRET=your_jwt_secret
 To run this project, you need to set up the following environment variables in a `.env.local` file at the root of your project:
 
 ```env
-MONGO_URI=mongodb+srv://yadavdipak2911:Dipak2024@cluster0.g5mfxfg.mongodb.net/blogCMS
-JWT_SECRET=your_jwt_secret
+MONGO_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/blogCMS
+JWT_SECRET=<your_jwt_secret>
 ```
 
-- `MONGO_URI`: The connection string for your MongoDB database.
-- `JWT_SECRET`: A secret key used for signing JSON Web Tokens (JWT).
+- `MONGO_URI`: Replace `<username>` and `<password>` with your MongoDB credentials. This is the connection string for your MongoDB database.
+- `JWT_SECRET`: Replace `<your_jwt_secret>` with a strong, unique secret key for signing JSON Web Tokens (JWT).
 
 Make sure to replace `your_jwt_secret` with a strong, secure secret key.
 
